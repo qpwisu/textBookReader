@@ -1,5 +1,5 @@
 package com.hany.txtviewlayout
-
+//git test
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
