@@ -78,11 +78,9 @@ class Viewer : AppCompatActivity() {
     }
     //받아온 문자열을 페이지에 들어갈만큼 잘라서 리스트에 저장하고 sp에 저장
     fun devidePage(tlist:ArrayList<String>,title: String){
-        Log.d("faa","dsa")
         val shared= getSharedPreferences("idText",Context.MODE_PRIVATE)
         var tmp =shared.getString(title,"")
         if (tmp==""){
-
             var cd= widthSize
             var ch= heightSize
 
@@ -102,8 +100,12 @@ class Viewer : AppCompatActivity() {
             for (line in 0..tlist.size-1){
 
                 var wid = paint.measureText(tlist[line])
+                Log.d("qpqp3",wid.toString())
+                Log.d("qpqp4",tlist[line].toString())
+
                 var lineHeight=(wid/ cd +1).toInt()*space
-                if (hei2-lineHeight>100){
+                Log.d("qpqp5",hei2.toString())
+                if (hei2-lineHeight>200){
                     hei2-=lineHeight
                 }
                 else{
@@ -111,6 +113,7 @@ class Viewer : AppCompatActivity() {
                     var txt=tlist.slice(startPage..line-1).joinToString (separator="\n" )
                     startPage = line
                     txtArray.add(txt)
+                    Log.d("widx",txt.toString())
                     hei2=ch
                 }
 //
@@ -165,6 +168,7 @@ class Viewer : AppCompatActivity() {
             var hei2= ch
             var space =(tsize).toInt()
             val txt = tlist1[page2]
+            Log.d("ttt3",txt)
             val textLayout = StaticLayout.Builder.obtain(txt, 0, txt.length, paint, cd) .setAlignment(
                 Layout.Alignment.ALIGN_NORMAL) .setLineSpacing(tsize, 0.5f) .setIncludePad(true).build()
 

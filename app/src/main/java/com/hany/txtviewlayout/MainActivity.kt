@@ -158,7 +158,7 @@ class MainActivity : AppCompatActivity() {
         var txxt=ArrayList<String>()
         contentResolver.openInputStream(uri)?.use { inputStream ->
 
-            BufferedReader(InputStreamReader(inputStream, "utf-16le")).use { reader ->
+            BufferedReader(InputStreamReader(inputStream, "utf-16LE")).use { reader ->
                 var line: String? = reader.readLine()
 
                 while (line != null) {
