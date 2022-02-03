@@ -8,8 +8,8 @@
 
 ## **설명**
 
-https://github.com/qpwisu/textBookReader/issues/1#issue-1123151328
-![Screenshot_1643896866.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/09e80ffd-0744-40ad-bfe5-7e3323498e3d/Screenshot_1643896866.png)
+<img src= https://user-images.githubusercontent.com/28581494/152361710-aa616e16-6ee0-44dd-ab00-d255c95314a8.png  width="400" height="700">
+<img src= https://user-images.githubusercontent.com/28581494/152363646-4eb98926-aca2-4fc5-8dc9-e94dfe9b10e3.png  width="400" height="700">
 
 왼쪽 홈 화면- 리사이클러뷰로 파일을 찾아 저장을하면 이 곳에 제목이 저장됩니다. 파일 내용과 이름은 따로 `SharedPreferences` 에 저장했습니다 
 
@@ -17,7 +17,7 @@ https://github.com/qpwisu/textBookReader/issues/1#issue-1123151328
 
 **MediaStore**나 **SAF(Storage Access Framework)** 를 이용해야해서 SAF를 사용하여 접근 하였습니다.
 
-![Screenshot_1643896873.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/59c0470c-1ba8-48c4-a982-553a28a148a5/Screenshot_1643896873.png)
+<img src= https://user-images.githubusercontent.com/28581494/152363823-be67dd2b-daac-46c0-9ffc-9d20d6e3b134.png  width="400" height="700">
 
 text들은 화면에 들어갈 수 있는 글자들을 나누어 배열에 저장하고 이를 canvas를 통해 onDraw에서 화면에 뿌려줬습니다. 그리고 화면 오른쪽 왼쪽에 투명한 view를 두어 클리하면 다음장으로 넘어가게 하였습니다. 
 
