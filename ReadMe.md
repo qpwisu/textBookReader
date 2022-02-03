@@ -8,8 +8,7 @@
 
 ## **설명**
 
-![Screenshot_1643896778.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7589213a-07ff-4b91-b3c4-22f34cedab85/Screenshot_1643896778.png)
-
+https://github.com/qpwisu/textBookReader/issues/1#issue-1123151328
 ![Screenshot_1643896866.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/09e80ffd-0744-40ad-bfe5-7e3323498e3d/Screenshot_1643896866.png)
 
 왼쪽 홈 화면- 리사이클러뷰로 파일을 찾아 저장을하면 이 곳에 제목이 저장됩니다. 파일 내용과 이름은 따로 `SharedPreferences` 에 저장했습니다 
